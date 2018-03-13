@@ -1,7 +1,5 @@
-import pandas as pd
-import numpy as np
-import string
 from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 class Feature_generator(object):
 
@@ -27,7 +25,4 @@ class Feature_generator(object):
             lowercase=True)
 
         # tf-idf matrix of 'comments'
-        self.tfidf_train_matrix = tfidf.fit_transform(self.data_df['clean_text'])
-
-
-
+        self.tfidf_matrix = tfidf.fit_transform(self.data_df['clean_text'])

@@ -1,7 +1,4 @@
-import pandas as pd
-import numpy as np
 import string
-
 
 class Data_Clean(object):
 

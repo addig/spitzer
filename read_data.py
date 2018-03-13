@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+
 
 class Data_Read(object):
     """
